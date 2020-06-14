@@ -14,7 +14,7 @@ def load_library(file_path)
 end
  
  def get_english_meaning(file_path,emoji)
-  library = load_library(emoticon)
+  library = load_library(file_path)
   library.each do | key, inner_hash|
     if inner_hash[:japanese] == emoji
      return key
