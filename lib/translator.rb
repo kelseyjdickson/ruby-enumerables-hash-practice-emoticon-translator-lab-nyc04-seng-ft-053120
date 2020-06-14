@@ -4,7 +4,7 @@ require 'pry'
 
 def load_library(file_path)
   # code goes here
- emoticon = YAML.load_file(file_path)
+ file_path = YAML.load_file(file_path)
  hash = {}
  emoticon.each do | feeling, emoji|
     hash[feeling] = {english:emoji[0],japanese:emoji[1]}
